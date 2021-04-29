@@ -29,3 +29,17 @@
   left: 0;
   right: 0;
 }
+
+/*-----------KEY FRAME-----------*/
+
+@keyframes getStarted {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}

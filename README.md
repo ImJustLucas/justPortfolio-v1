@@ -8,4 +8,5 @@ Portfolio imaginé et créé par Lucas BELLIER. | Portfolio created by Lucas BEL
 
 ## Credit
 
-- Nuxt.js
+- [Nuxt.js](https://nuxtjs.org/)
+- [iTyped](https://ityped.surge.sh/)

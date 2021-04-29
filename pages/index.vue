@@ -4,7 +4,7 @@
     <div class="content wrap">
       <p class="text"><span class="blue">hey ! i'm</span></p>
       <h1 class="title">Lucas bellier</h1>
-      <p class="text typing">i'm a <span class="blue">web developer</span></p>
+      <p class="text typing">i'm a <span id="spanTyped" class="blue"></span></p>
       <div class="square">
         <p>
           <nuxt-link to="/about"
@@ -18,7 +18,18 @@
 </template>
 
 <script>
+import { init } from "ityped";
+
 export default {
+  mounted() {
+    const spanTyped = document.getElementById("spanTyped");
+    console.log("Wesh :", spanTyped);
+
+    init(spanTyped, {
+      strings: ["web developer", "web designer", "nice guy :)"],
+      backDelay: 2500
+    });
+  },
   head() {
     return {
       title: "Lucas BELLIER | Home",
@@ -95,5 +106,33 @@ p.text {
 
 i {
   margin-top: 20px;
+  animation: getStarted 2s infinite ease-in-out;
+}
+
+.ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.4s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
 }
 </style>
