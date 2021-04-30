@@ -31,6 +31,7 @@ export default {
   display: flex;
   justify-content: space-between;
   z-index: 99;
+  margin-top: 20px;
 }
 
 div.title {

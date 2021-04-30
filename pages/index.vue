@@ -44,12 +44,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .split.left {
   position: absolute;
   z-index: -1;
   width: 50%;
-  height: 1024px;
+  height: 100vh;
   left: 0px;
   top: 0px;
   background-color: #e3f6fb;
@@ -64,7 +64,7 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .square {

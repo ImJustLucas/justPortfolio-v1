@@ -1,6 +1,12 @@
 <template>
   <div class="container">
-    <h1>Portfolio</h1>
+    <h1 class="title">Portfolio</h1>
+    <p class="subtitle">
+      This is all the project i’ve work on, freelance, or with TaloDev.
+    </p>
+    <div class="content">
+      yes
+    </div>
   </div>
 </template>
 
@@ -22,4 +28,27 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.container {
+  height: 100vh;
+}
+
+h1.title {
+  font-size: 72px;
+  margin: 80px 0 50px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  background-color: #e3f6fb;
+}
+</style>
