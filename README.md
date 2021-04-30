@@ -10,3 +10,4 @@ Portfolio imaginé et créé par Lucas BELLIER. | Portfolio created by Lucas BEL
 
 - [Nuxt.js](https://nuxtjs.org/)
 - [iTyped](https://ityped.surge.sh/)
+- [Cursor Animation](https://youtu.be/JonZXS4awuc)

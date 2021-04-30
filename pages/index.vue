@@ -23,8 +23,6 @@ import { init } from "ityped";
 export default {
   mounted() {
     const spanTyped = document.getElementById("spanTyped");
-    console.log("Wesh :", spanTyped);
-
     init(spanTyped, {
       strings: ["web developer", "web designer", "nice guy :)"],
       backDelay: 2500

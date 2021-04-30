@@ -26,8 +26,8 @@ export default {
 <style>
 #header {
   position: relative;
-  margin-top: 20px;
   text-transform: uppercase;
+  align-items: baseline;
   display: flex;
   justify-content: space-between;
   z-index: 99;
