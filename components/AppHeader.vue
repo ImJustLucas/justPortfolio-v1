@@ -3,13 +3,13 @@
     <div class="title"><nuxt-link to="/">Lucas.</nuxt-link></div>
     <div class="nav">
       <ul>
-        <li @click="handleClickEvent()" class="hvr-underline-from-center">
+        <li @click="$sounds.click.play" class="hvr-underline-from-center">
           <nuxt-link to="/">Home</nuxt-link>
         </li>
-        <li @click="handleClickEvent()" class="hvr-underline-from-center">
+        <li @click="$sounds.click.play" class="hvr-underline-from-center">
           <nuxt-link to="/about">About</nuxt-link>
         </li>
-        <li @click="handleClickEvent()" class="hvr-underline-from-center">
+        <li @click="$sounds.click.play" class="hvr-underline-from-center">
           <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         </li>
       </ul>
@@ -17,13 +17,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  methods: {
-    handleClickEvent() {}
-  }
-};
-</script>
+<script></script>
 
 <style lang="scss">
 #header {
