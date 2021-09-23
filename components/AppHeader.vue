@@ -1,15 +1,15 @@
 <template>
   <div id="header" class="wrap">
-    <div class="title">Lucas.</div>
+    <div class="title"><nuxt-link to="/">Lucas.</nuxt-link></div>
     <div class="nav">
       <ul>
-        <li class="hvr-underline-from-center">
+        <li @click="handleClickEvent()" class="hvr-underline-from-center">
           <nuxt-link to="/">Home</nuxt-link>
         </li>
-        <li class="hvr-underline-from-center">
+        <li @click="handleClickEvent()" class="hvr-underline-from-center">
           <nuxt-link to="/about">About</nuxt-link>
         </li>
-        <li class="hvr-underline-from-center">
+        <li @click="handleClickEvent()" class="hvr-underline-from-center">
           <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         </li>
       </ul>
@@ -19,11 +19,13 @@
 
 <script>
 export default {
-  name: "AppHeader"
+  methods: {
+    handleClickEvent() {}
+  }
 };
 </script>
 
-<style>
+<style lang="scss">
 #header {
   position: relative;
   text-transform: uppercase;
@@ -31,27 +33,50 @@ export default {
   display: flex;
   justify-content: space-between;
   z-index: 99;
-  margin-top: 20px;
+  padding-top: $pad-s;
 }
 
 div.title {
   font-weight: bold;
   font-size: 36px;
+  padding-left: 20px;
+}
+
+div.title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav {
+  max-width: 45%;
 }
 
 div.nav ul {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 div.nav ul li {
   margin-right: 25px;
   padding-bottom: 5px;
-  font-size: 25px;
+  font-size: 22px;
+  text-align: right;
 }
 
 div.nav ul li a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (min-width: 768px) {
+  div.nav ul {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  div.nav ul li {
+    text-align: left;
+  }
 }
 </style>

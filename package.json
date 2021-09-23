@@ -10,9 +10,14 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/style-resources": "^1.2.1",
     "core-js": "^3.9.1",
+    "fibers": "^5.0.0",
     "ityped": "^1.0.3",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "sass-loader": "10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
 }

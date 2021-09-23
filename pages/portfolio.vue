@@ -2,10 +2,10 @@
   <div class="container">
     <h1 class="title">Portfolio</h1>
     <p class="subtitle">
-      This is all the project i’ve work on, freelance, or with TaloDev.
+      This is all the project i’ve work on, freelance or with TaloDev.
     </p>
     <div class="content">
-      yes
+      yes, it's coming baby don't worry
     </div>
   </div>
 </template>
@@ -14,41 +14,41 @@
 export default {
   head() {
     return {
-      title: "Lucas BELLIER | Portfolio",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Lucas BELLIER's website, made with love from Normandie. I'm a full stack developer based in France"
-        }
-      ]
+      title: "Portfolio"
     };
   }
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   height: 100vh;
 }
 
 h1.title {
-  font-size: 72px;
+  font-size: 52px;
   margin: 80px 0 50px 0;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+
+  @include min-s {
+    font-size: 72px;
+  }
 }
 
 .subtitle {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 22px;
 }
 
 .content {
   height: 100%;
   width: 100%;
   background-color: #e3f6fb;
+  text-align: center;
+  padding-top: $pad-xs;
+  font-size: 22px;
 }
 </style>

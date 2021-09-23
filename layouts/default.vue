@@ -1,19 +1,16 @@
 <template>
   <div>
     <AppHeader />
-    <Nuxt />
+    <transition name="slide">
+      <Nuxt />
+    </transition>
     <div class="cursor"></div>
     <div class="cursor2"></div>
   </div>
 </template>
 
 <script>
-import AppHeader from "../components/AppHeader";
-
 export default {
-  components: {
-    AppHeader
-  },
   mounted() {
     const cursor = document.querySelector(".cursor");
     const cursor2 = document.querySelector(".cursor2");
@@ -25,7 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .cursor {
   position: fixed;
   width: 50px;
@@ -51,5 +48,18 @@ export default {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: 0.15s;
+}
+
+.slide-enter {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-leave-to {
+  opacity: 0;
 }
 </style>

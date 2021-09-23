@@ -1,6 +1,6 @@
 # JustPortfolio v1 2020
 
-JustPortfolio v1 est un portfolio imaginé et créé par Lucas BELLIER (ImJustLucas). | JustPortfolio v1 is a portoflio thought and created by Lucas BELLIER (ImJustLucas).
+JustPortfolio v1 est un portfolio imaginé et créé par Lucas BELLIER (ImJustLucas). | JustPortfolio v1 is a portoflio imagined and created by Lucas BELLIER (ImJustLucas).
 
 - [Site web](ça arrive)
 - [Twitter](https://twitter.com/ImJustLucas_)
