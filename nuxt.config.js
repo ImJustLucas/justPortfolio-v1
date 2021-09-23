@@ -1,7 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: "static",
-  ssr: false,
   head: {
     title: "Lucas BELLIER | %s",
     htmlAttrs: {
