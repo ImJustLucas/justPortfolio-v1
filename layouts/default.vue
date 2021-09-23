@@ -6,7 +6,6 @@
     </transition>
     <div class="cursor"></div>
     <div class="cursor2"></div>
-    <audio id="soundOnCLick" src="~/assets/sound/soundOnCLick.wav"></audio>
   </div>
 </template>
 
