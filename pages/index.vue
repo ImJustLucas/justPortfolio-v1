@@ -64,7 +64,11 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  padding-top: $pad-l;
+  padding-top: $pad-m;
+
+  @include min-s {
+    padding-top: $pad-l;
+  }
 
   @include min-m {
     padding-top: $pad-xl;
@@ -96,12 +100,26 @@ a {
 }
 
 p.text {
-  font-size: 36px;
+  font-size: 22px;
+  @include min-s {
+    font-size: 28px;
+  }
+
+  @include min-m {
+    font-size: 36px;
+  }
 }
 
 .title {
-  font-size: 72px;
+  font-size: 46px;
   margin: 30px 0;
+  @include min-s {
+    font-size: 55px;
+  }
+
+  @include min-m {
+    font-size: 72px;
+  }
 }
 
 i {
