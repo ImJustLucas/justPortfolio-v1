@@ -14,4 +14,4 @@ ENG - JustPortfolio v1 is a portoflio imagined and created by Lucas BELLIER (ImJ
 - [iTyped](https://ityped.surge.sh/)
 - [Cursor Animation](https://youtu.be/JonZXS4awuc)
 
-🌐 Hosted by [Cloudfare] (https://www.cloudflare.com/)
+🌐 Hosted by [Cloudfare](https://www.cloudflare.com/)
