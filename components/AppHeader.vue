@@ -3,13 +3,13 @@
     <div class="title"><nuxt-link to="/">Lucas.</nuxt-link></div>
     <div class="nav">
       <ul>
-        <li @click="$sounds.click.play" class="hvr-underline-from-center">
+        <li class="hvr-underline-from-center">
           <nuxt-link to="/">Home</nuxt-link>
         </li>
-        <li @click="$sounds.click.play" class="hvr-underline-from-center">
+        <li class="hvr-underline-from-center">
           <nuxt-link to="/about">About</nuxt-link>
         </li>
-        <li @click="$sounds.click.play" class="hvr-underline-from-center">
+        <li class="hvr-underline-from-center">
           <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         </li>
       </ul>
