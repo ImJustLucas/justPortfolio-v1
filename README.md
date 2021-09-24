@@ -4,7 +4,9 @@ FR - JustPortfolio v1 est un portfolio imaginé et créé par Lucas BELLIER (ImJ
 ENG - JustPortfolio v1 is a portoflio imagined and created by Lucas BELLIER (ImJustLucas).
 
 👨‍💻 [lucasblr.fr](lucasblr.fr)
+
 - [Twitter](https://twitter.com/ImJustLucas_)
+- [Instagram](https://www.instagram.com/luuucas.blr/)
 - [LinkedIn](https://www.linkedin.com/in/lucasbellier/)
 
 ## Tools 🔨
