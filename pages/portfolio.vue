@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  layout: "default",
   head() {
     return {
       title: "Portfolio"
@@ -21,34 +22,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#header {
+  top: -10px;
+}
+
 .container {
   height: 100vh;
-}
+  position: relative;
 
-h1.title {
-  font-size: 52px;
-  margin: 80px 0 50px 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
+  .title {
+    font-size: 52px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: $pad-xl;
+    padding-bottom: $pad-xs;
 
-  @include min-s {
-    font-size: 72px;
+    @include min-s {
+      font-size: 72px;
+    }
   }
-}
 
-.subtitle {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 22px;
-}
+  .subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
 
-.content {
-  height: 100%;
-  width: 100%;
-  background-color: #e3f6fb;
-  text-align: center;
-  padding-top: $pad-xs;
-  font-size: 22px;
+  .content {
+    height: 100%;
+    width: 100%;
+    background-color: $lightblue;
+    text-align: center;
+    padding-top: $pad-xs;
+    font-size: 22px;
+  }
 }
 </style>

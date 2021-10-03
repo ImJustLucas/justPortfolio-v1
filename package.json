@@ -18,6 +18,7 @@
     "sass-loader": "10"
   },
   "devDependencies": {
+    "@nuxtjs/device": "^2.1.0",
     "sass": "^1.42.1"
   }
 }
