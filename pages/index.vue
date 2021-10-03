@@ -66,19 +66,7 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-<<<<<<< HEAD
-  padding-top: $pad-m;
-
-  @include min-s {
-    padding-top: $pad-l;
-  }
-
-  @include min-m {
-    padding-top: $pad-xl;
-  }
-=======
   padding-top: $pad-xl;
->>>>>>> develop
 
   .square {
     width: 100px;
