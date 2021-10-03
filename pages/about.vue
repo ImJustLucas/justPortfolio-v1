@@ -43,22 +43,21 @@ export default {
   height: 100vh;
   top: 0px;
   right: 0px;
-  background-color: #e3f6fb;
+  background-color: $lightblue;
 }
 
 .content {
   height: 100%;
   width: 100%;
   text-align: center;
-  padding-top: $pad-xs;
+  padding-top: $pad-xl;
 
   h1.title {
     font-size: 52px;
-    margin: 80px 0 50px 0;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-
+    padding-bottom: $pad-xs;
     @include min-s {
       font-size: 72px;
     }

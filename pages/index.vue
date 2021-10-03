@@ -9,8 +9,10 @@
         <p>
           <nuxt-link to="/about"
             >get started <br />
-            <i class="fas fa-arrow-right"></i
-          ></nuxt-link>
+            <img
+              :src="require('~/assets/img/arrow-right.svg')"
+              alt="Flèche vers la droite"
+          /></nuxt-link>
         </p>
       </div>
     </div>
@@ -21,13 +23,6 @@
 import { init } from "ityped";
 
 export default {
-  mounted() {
-    const spanTyped = document.getElementById("spanTyped");
-    init(spanTyped, {
-      strings: ["web developer", "web designer", "nice guy :)"],
-      backDelay: 2500
-    });
-  },
   head() {
     return {
       title: "Home",
@@ -40,6 +35,13 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    const spanTyped = document.getElementById("spanTyped");
+    init(spanTyped, {
+      strings: ["web developer", "web designer", "nice guy :)"],
+      backDelay: 2500
+    });
   }
 };
 </script>
@@ -52,7 +54,7 @@ export default {
   height: 100vh;
   top: 0px;
   left: 0px;
-  background-color: #e3f6fb;
+  background-color: $lightblue;
 }
 
 .content {
@@ -64,16 +66,12 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  padding-top: $pad-l;
-
-  @include min-m {
-    padding-top: $pad-xl;
-  }
+  padding-top: $pad-xl;
 
   .square {
     width: 100px;
     height: 100px;
-    background-color: #e3f6fb;
+    background-color: $lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +89,7 @@ export default {
   }
 }
 a {
-  color: black;
+  color: $dark;
   text-decoration: none;
 }
 
@@ -104,8 +102,9 @@ p.text {
   margin: 30px 0;
 }
 
-i {
+img {
   margin-top: 20px;
+  width: 15px;
   animation: getStarted 2s infinite ease-in-out;
 }
 
