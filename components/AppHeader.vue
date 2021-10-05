@@ -1,7 +1,7 @@
 <template>
   <div id="header">
     <div class="nav-bar">
-      <div class="title" :class="{ active: NavIsOpen }">
+      <div class="title" :class="{ active: NavIsOpen }" @click="closeNav()">
         <nuxt-link to="/">Lucas.</nuxt-link>
       </div>
 

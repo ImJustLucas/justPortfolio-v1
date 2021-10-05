@@ -2,14 +2,26 @@
   <div>
     <div id="blue-BG"></div>
     <div class="content">
-      <h2>404</h2>
+      <h2>{{ error.statusCode }}</h2>
       <p>you should not be there ...</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      title: "BIG PROBLEMS"
+    };
+  },
+  props: {
+    error: {
+      type: Object,
+      required: true
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
