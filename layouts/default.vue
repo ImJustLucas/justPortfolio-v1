@@ -1,10 +1,10 @@
 <template>
   <main>
-    <!-- <transition name="loading">
+    <transition name="loading">
       <div class="loader" v-if="!isloaded">
-        <p id="number">{{ loader }}</p>
+        <p id="number">0</p>
       </div>
-    </transition> -->
+    </transition>
     <AppHeader />
     <transition name="slide">
       <Nuxt />
@@ -19,12 +19,12 @@ export default {
   data() {
     return {
       isloaded: false
-      // loader: 100
     };
   },
   mounted() {
     const cursor = document.querySelector(".cursor");
     const cursor2 = document.querySelector(".cursor2");
+    let loader = document.getElementById("number");
     document.addEventListener("mousemove", function(e) {
       if (cursor != null && cursor2 != null) {
         cursor.style.cssText = cursor2.style.cssText =
@@ -32,16 +32,18 @@ export default {
       }
     });
 
-    // let loaderInterval = setInterval(function() {
-    //   if (this.loader == 100) {
-    //     this.isloaded = true;
-    //     clearInterval(loaderInterval);
-    //     console.log("stop");
-    //   } else {
-    //     this.loader = 1 + this.loader;
-    //     console.log(this.loader);
-    //   }
-    // }, 500);
+    const loaderInterval = setInterval(() => {
+      if (loader.innerText === "100") {
+        loader.classList.add("leave");
+        setTimeout(() => {
+          clearInterval(loaderInterval);
+          return (this.isloaded = true);
+        }, 500);
+      } else {
+        loader.innerText = 1 + parseInt(loader.innerText);
+        console.log(loader.innerText);
+      }
+    }, 20);
   }
 };
 </script>
@@ -64,8 +66,13 @@ span.blue {
   justify-content: center;
   z-index: 100;
 
-  .number {
+  #number {
     font-size: 72px;
+    transition: all 1s ease-out;
+
+    &.leave {
+      opacity: 0;
+    }
   }
 }
 
@@ -94,6 +101,15 @@ span.blue {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: 0.15s;
+}
+
+.loading-enter-active,
+.loading-leave-active {
+  transition: all 1s;
+}
+.loading-enter,
+.loading-leave-to {
+  opacity: 0;
 }
 
 .slide-enter-active,

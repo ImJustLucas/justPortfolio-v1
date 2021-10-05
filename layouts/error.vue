@@ -3,7 +3,10 @@
     <div id="blue-BG"></div>
     <div class="content">
       <h2>{{ error.statusCode }}</h2>
+<<<<<<< HEAD
       <p>{{ error.message }} :(</p>
+=======
+>>>>>>> develop
       <p>you should not be there ...</p>
     </div>
   </div>
