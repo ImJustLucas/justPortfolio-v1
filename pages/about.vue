@@ -11,7 +11,7 @@
       </p>
       <p class="contact">
         06.51.32.18.63 <br />
-        bellierlucas.pro@gmail.com
+        
       </p>
     </div>
   </div>
