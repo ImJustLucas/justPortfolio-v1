@@ -16,7 +16,46 @@ export default {
       },
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Lucas BELLIER's website, made with love from Normandie. I'm a full stack developer based in France"
+      },
+
+      //Open Graph + Facebook
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://lucasblr.fr" },
+      {
+        property: "og:title",
+        content: "Lucas BELLIER just portfolio"
+      },
+      { property: "og:site_name", content: "lucasblr.fr" },
+      {
+        property: "og:image",
+        content: "/card.jpg"
+      },
+      {
+        property: "og:description",
+        content:
+          "Lucas BELLIER's website, made with love from Normandie. I'm a full stack developer based in France"
+      },
+
+      //Twitter
+      { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:title",
+        content: "Lucas BELLIER just portfolio"
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Lucas BELLIER's website, made with love from Normandie. I'm a full stack developer based in France"
+      },
+      {
+        name: "twitter:image",
+        content: "/card.jpg"
+      }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
