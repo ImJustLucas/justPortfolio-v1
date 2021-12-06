@@ -10,8 +10,9 @@
         u can contact me just here :
       </p>
       <p class="contact">
-        06.51.32.18.63 <br />
-        
+        <a target="_blank" href="https://www.linkedin.com/in/lucasbellier/"
+          >Mon linkedin</a
+        >
       </p>
     </div>
   </div>
@@ -21,15 +22,7 @@
 export default {
   head() {
     return {
-      title: "A propos",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Lucas BELLIER's website, made with love from Normandie. I'm a full stack developer based in France"
-        }
-      ]
+      title: "A propos"
     };
   }
 };
