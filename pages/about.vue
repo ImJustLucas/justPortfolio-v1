@@ -10,8 +10,9 @@
         u can contact me just here :
       </p>
       <p class="contact">
-        06.51.32.18.63 <br />
-        bellierlucas.pro@gmail.com
+        <a target="_blank" href="https://www.linkedin.com/in/lucasbellier/"
+          >Mon linkedin</a
+        >
       </p>
     </div>
   </div>
