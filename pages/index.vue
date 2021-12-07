@@ -26,14 +26,6 @@ export default {
   head() {
     return {
       title: "Home",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Lucas BELLIER's website, made with love from Normandie. I'm a full stack developer based in France"
-        }
-      ]
     };
   },
   mounted() {
